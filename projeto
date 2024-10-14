@@ -1,1 +1,19 @@
 git clone https://sbs.t-systems.com.br/gitlab/mercedes/collab/estagio/nicolas-alvares/projeto-semana-1-git
+cd projeto-semana-1-git
+echo "Primeiro commit de teste" > arquivo.txt
+git add arquivo.txt
+git commit -m "Adiciona o arquivo de texto inicial"
+git push origin main
+echo "Conteúdo alterado no arquivo" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera o conteúdo do arquivo.txt"
+git push origin main
+git checkout -b develop
+echo "Alteração na branch develop" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera o conteúdo na branch develop"
+git push origin develop
+
+git checkout main
+git tag v1.0.0
+git push origin v1.0.0
