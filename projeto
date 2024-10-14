@@ -13,7 +13,3 @@ echo "Alteração na branch develop" > arquivo.txt
 git add arquivo.txt
 git commit -m "Altera o conteúdo na branch develop"
 git push origin develop
-
-git checkout main
-git tag v1.0.0
-git push origin v1.0.0
